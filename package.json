@@ -1,0 +1,40 @@
+{
+  "name": "web-component",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "start": "npx http-server src/",
+    "lint:editorconfig": "editorconfig-checker",
+    "lint:style": "stylelint './src/**/*.{css,sass,scss}'",
+    "lint:style:fix": "npm run lint:style -- --fix",
+    "lint:script": "eslint",
+    "lint:script:fix": "npm run lint:script -- --fix=true",
+    "lint:commit": "commitlint",
+    "lint:staged": "lint-staged",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magnobiet/web-component.git"
+  },
+  "keywords": [],
+  "author": "Magno Fernando Brixner Biét <magno.biet@gmail.com> (https://magnobiet.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/magnobiet/web-component/issues"
+  },
+  "homepage": "https://github.com/magnobiet/web-component#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^14.1.0",
+    "@commitlint/config-conventional": "^14.1.0",
+    "editorconfig-checker": "^4.0.2",
+    "eslint": "^8.1.0",
+    "eslint-config-google": "^0.14.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^11.2.6",
+    "stylelint": "^14.0.1",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-standard": "^23.0.0"
+  }
+}
